@@ -1,12 +1,21 @@
 import React from 'react';
 import './index.css';
 
-const ColorSelector = () => {
+const ColorSelector = ({colorList}) => {
+
+    const colorOptions = colorList.map((colorCode) => {
+        return (
+            <div
+                key={colorCode}
+                style={{backgroundColor: colorCode}}
+                className="color-selector-option"
+            ></div>
+        )
+    })
+
     return (
         <div className="color-selector-wrapper">
-            <div style={{backgroundColor: "red"}} className="color-selector-option"/>
-            <div style={{backgroundColor: "green"}} className="color-selector-option"/>
-            <div style={{backgroundColor: "blue"}} className="color-selector-option"/>
+            {colorOptions}
         </div>
     );
 }

@@ -13,8 +13,8 @@ const ColorWidget = (props) => {
                 <h2>Color Picker Widget</h2>
             </div>
             <ColorWindow />
-            <ColorSelector />
-        </div> 
+            <ColorSelector colorList={colorList}/>
+        </div>
     );
 }
 
