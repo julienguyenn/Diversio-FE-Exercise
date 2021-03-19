@@ -20,6 +20,7 @@ const ColorSelector = ({ colorList, selectedColor, changeSelectedColor }) => {
     return (
         <div className="color-selector-wrapper">
             {colorOptions}
+            <h5>Yay! The color is {selectedColor}</h5>
         </div>
     );
 }
