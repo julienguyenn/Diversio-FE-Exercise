@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
 
-const ColorWindow = () => {
+const ColorWindow = ({ selectedColor }) => {
     return (
         <div className="color-window-wrapper">
-            <div style={{backgroundColor: "grey"}} className="color-window-colorbox"/>
+            <div style={{backgroundColor: selectedColor }} className="color-window-colorbox"/>
         </div>
     );
 }

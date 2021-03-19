@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-const ColorSelector = ({colorList}) => {
+const ColorSelector = ({ colorList, changeSelectedColor }) => {
 
     const colorOptions = colorList.map((colorCode) => {
         return (
@@ -9,6 +9,7 @@ const ColorSelector = ({colorList}) => {
                 key={colorCode}
                 style={{backgroundColor: colorCode}}
                 className="color-selector-option"
+                onClick={() => changeSelectedColor(colorCode)}
             ></div>
         )
     })
