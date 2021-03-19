@@ -5,8 +5,8 @@ import './index.css';
 
 const ColorWidget = (props) => {
     let [selectedColor, changeSelectedColor] = useState("grey")
-
     const { colorList } = props;
+
     return (
         <div className="color-widget">
             <div className="color-widget-title">

@@ -15,7 +15,7 @@ const ColorSelector = ({ colorList, selectedColor, changeSelectedColor }) => {
                 onClick={() => changeSelectedColor(colorCode)}
             ></div>
         )
-    })
+    });
 
     return (
         <div className="color-selector-wrapper">
