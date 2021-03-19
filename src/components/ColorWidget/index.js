@@ -15,6 +15,7 @@ const ColorWidget = (props) => {
             <ColorWindow selectedColor={selectedColor} />
             <ColorSelector
                 colorList={colorList}
+                selectedColor={selectedColor}
                 changeSelectedColor={changeSelectedColor}
             />
         </div>
